@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+<html>
+
+<header>
+    <link rel="stylesheet" href="/css/styles.css">
+</header>
+
+<body>
+    <H1>This is the about page</H1>
+    <img src="/img/IMG-20140724-WA0003.jpg">
+</body>
+
+</html>
