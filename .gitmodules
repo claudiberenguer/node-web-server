@@ -1,0 +1,3 @@
+[submodule "public/skycons"]
+	path = public/skycons
+	url = https://github.com/darkskyapp/skycons.git

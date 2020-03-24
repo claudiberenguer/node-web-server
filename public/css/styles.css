@@ -44,11 +44,13 @@ header a {
 input {
     border: 1px solid #cccccc;
     padding: 8px; 
+    margin: 4px;
 }
 
 button {
     border: 1px solid #888888;
     padding: 8px;
+    margin: 4px;
     background-color: #888888;
     cursor: pointer;
     color: #cccccc;
@@ -57,4 +59,15 @@ button {
 .inputForm {
     display: flex;
     flex-direction: row;
+}
+
+.summary {
+    display: flex;
+    flex-direction: row;
+}
+
+.summary canvas {
+    width: 128px;
+    height: 64px;
+    margin: 16px;
 }

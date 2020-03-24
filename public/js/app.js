@@ -43,7 +43,11 @@ weatherForm.addEventListener('submit', (e) => {
             return;
         } 
         message1.textContent = forecastData.location;
-        message2.textContent = forecastData.forecast;
+        summary.textContent = forecastData.forecast.summary;
+        var skycons = new Skycons({"color": "blue"});
+        skycons.add(document.querySelector('#icon'), forecastData.forecast.icon);
+        message2.textContent = forecastData.forecast.temp_n_rainp;
+
     });  
 });
 });

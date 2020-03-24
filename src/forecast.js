@@ -10,8 +10,12 @@ const forecast = ({lat, lon}, callback) => {
             callback(body.error, undefined);
         }
         else {
-            callback(undefined, body.currently.summary + '. La temperatura és de ' + body.currently.temperature + 'ºC \
-            i la probabilitat de pluja és del ' + body.currently.precipProbability + '%.');
+            callback(undefined, {
+                summary: body.currently.summary,
+                icon: body.currently.icon,
+                temp_n_rainp:   'La temperatura és de ' + body.currently.temperature + 'ºC \
+                                i la probabilitat de pluja és del ' + body.currently.precipProbability + '%.'
+            });
         }
     });
 }
